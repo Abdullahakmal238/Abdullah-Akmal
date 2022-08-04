@@ -1,12 +1,12 @@
 let menu = document.querySelector('#menu-bars');
 let header = document.querySelector('header');
 
-menu.onclick = () =>{
+menu.onclick = () => {
     menu.classList.toggle('fa-times');
     header.classList.toggle('active');
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
     menu.classList.remove('fa-times');
     header.classList.remove('active');
 }
@@ -14,23 +14,26 @@ window.onscroll = () =>{
 let cursor1 = document.querySelector('.cursor-1');
 let cursor2 = document.querySelector('.cursor-2');
 
-window.onmousemove = (e) =>{
+window.onmousemove = (e) => {
     cursor1.style.top = e.pageY + 'px';
     cursor1.style.left = e.pageX + 'px';
     cursor2.style.top = e.pageY + 'px';
     cursor2.style.left = e.pageX + 'px';
 }
 
-document.querySelectorAll('a').forEach(links =>{
+document.querySelectorAll('a').forEach(links => {
 
-    links.onmouseenter = () =>{
+    links.onmouseenter = () => {
         cursor1.classList.add('active');
         cursor2.classList.add('active');
     }
 
-    links.onmouseleave = () =>{
-        cursor1.classList.remove('active');
-        cursor2.classList.remove('active');
-    }
-
+    links.onmouseleave = () => {
+            cursor1.classList.remove('active');
+            cursor2.classList.remove('active');
+        }
+        // <!-- Pixel Code for https://www.widgetsquad.com/ -->
+        <
+        script async src = "https://www.widgetsquad.com/pixel/6ufivwsqyui0bgn3ri9ai24k4nrj56ab" > < /script>
+        // <!-- END Pixel Code -->
 });
