@@ -29,11 +29,8 @@ document.querySelectorAll('a').forEach(links => {
     }
 
     links.onmouseleave = () => {
-            cursor1.classList.remove('active');
-            cursor2.classList.remove('active');
-        }
-        // <!-- Pixel Code for https://www.widgetsquad.com/ -->
-        <
-        script async src = "https://www.widgetsquad.com/pixel/6ufivwsqyui0bgn3ri9ai24k4nrj56ab" > < /script>
-        // <!-- END Pixel Code -->
+        cursor1.classList.remove('active');
+        cursor2.classList.remove('active');
+    }
+
 });
